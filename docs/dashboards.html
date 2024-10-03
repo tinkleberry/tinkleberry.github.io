@@ -3,19 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboards</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>Power BI Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .embed-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="../../index.html">Home</a>
-        <a href="../../dashboards.html">Dashboards</a>
-        <a href="../../documents.html">Documents</a>
+        <a href="#home">Home</a>
+        <a href="#reports">Reports</a>
+        <a href="#settings">Settings</a>
     </div>
-    
+
     <div class="content">
-        <h1>Dashboards</h1>
-        <p>This is the Dashboards page.</p>
+        <h1>Power BI Dashboard</h1>
+        <p>Below is an embedded Power BI report:</p>
+
+        <div class="embed-container">
+            <iframe 
+                src="https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID&autoAuth=true&ctid=YOUR_TENANT_ID" 
+                allowFullScreen="true">
+            </iframe>
+        </div>
+
+        <!-- You can add more embedded Power BI reports here -->
     </div>
 </body>
 </html>
