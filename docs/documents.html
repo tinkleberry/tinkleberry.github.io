@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
-    <link rel="stylesheet" href="../../style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="../../index.html">Home</a>
-        <a href="../../dashboards.html">Dashboards</a>
-        <a href="../../documents.html">Documents</a>
+    <!-- Header Section -->
+    <header>
+        <h1>Document Management System</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <section id="upload">
+                <h2>Upload Documents</h2>
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <label for="fileUpload">Choose a file to upload:</label>
+                    <input type="file" id="fileUpload" name="file" required>
+                    <br><br>
+                    <button type="submit" class="btn">Upload File</button>
+                </form>
+            </section>
+
+            <section id="create-folder">
+                <h2>Create New Folder</h2>
+                <form action="/create-folder" method="POST">
+                    <label for="folderName">Enter new folder name:</label>
+                    <input type="text" id="folderName" name="folderName" required>
+                    <br><br>
+                    <button type="submit" class="btn">Create Folder</button>
+                </form>
+            </section>
+
+            <section id="files">
+                <h2>Available Documents</h2>
+                <ul>
+                    <!-- Placeholder for file listing, this would be dynamically populated -->
+                    <li><a href="files/document1.pdf" download>Download document1.pdf</a></li>
+                    <li><a href="files/document2.docx" download>Download document2.docx</a></li>
+                </ul>
+            </section>
+        </main>
     </div>
-    
-    <div class="content">
-        <h1>Documents</h1>
-        <p>This is the Documents page.</p>
-    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Document Management System. All rights reserved.</p>
+    </footer>
 </body>
 </html>
