@@ -17,7 +17,7 @@ body {
 
 /* Header */
 header {
-    background-color: #0044cc;
+    background-color: #4ec6f2;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,7 +31,7 @@ header h1 {
 
 /* Navigation Menu */
 nav {
-    background-color: #003399;
+    background-color: #4ec6f2;
     padding: 10px;
     text-align: center;
 }
@@ -69,7 +69,7 @@ main {
 }
 
 main h2 {
-    color: #003399;
+    color: #4ec6f2;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -80,7 +80,7 @@ main p {
 }
 
 main a {
-    color: #0044cc;
+    color: #4ec6f2;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -92,7 +92,7 @@ main a:hover {
 
 /* Button Styles */
 .btn {
-    background-color: #0044cc;
+    background-color: #4ec6f2;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -103,12 +103,12 @@ main a:hover {
 }
 
 .btn:hover {
-    background-color: #003399;
+    background-color: #4ec6f2;
 }
 
 /* Footer */
 footer {
-    background-color: #0044cc;
+    background-color: #4ec6f2;
     color: white;
     padding: 10px 0;
     text-align: center;
