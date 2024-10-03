@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4ec6f2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #4ec6f2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce6ff;
+}
+
+/* Main Section */
+main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+main h2 {
+    color: #4ec6f2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: #4ec6f2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: #002266;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #4ec6f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4ec6f2;
+}
+
+/* Footer */
+footer {
+    background-color: #4ec6f2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
