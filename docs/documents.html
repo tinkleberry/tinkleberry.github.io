@@ -13,9 +13,18 @@
         <h1>Document Management System</h1>
     </header>
 
+    <!-- Navigation Bar for Sorting -->
+    <nav>
+        <ul class="sort-nav">
+            <li><a href="?sort=project">Sort by Project Name</a></li>
+            <li><a href="?sort=spread">Sort by Spread Name</a></li>
+        </ul>
+    </nav>
+
     <!-- Main Content -->
     <div class="container">
         <main>
+            <!-- Upload Section -->
             <section id="upload">
                 <h2>Upload Documents</h2>
                 <form action="/upload" method="POST" enctype="multipart/form-data">
@@ -26,6 +35,7 @@
                 </form>
             </section>
 
+            <!-- Create Folder Section -->
             <section id="create-folder">
                 <h2>Create New Folder</h2>
                 <form action="/create-folder" method="POST">
@@ -36,12 +46,14 @@
                 </form>
             </section>
 
+            <!-- Available Documents Section -->
             <section id="files">
                 <h2>Available Documents</h2>
                 <ul>
                     <!-- Placeholder for file listing, this would be dynamically populated -->
-                    <li><a href="files/document1.pdf" download>Download document1.pdf</a></li>
-                    <li><a href="files/document2.docx" download>Download document2.docx</a></li>
+                    <li><a href="files/project1-spread1.pdf" download>Project 1 - Spread 1</a></li>
+                    <li><a href="files/project2-spread2.docx" download>Project 2 - Spread 2</a></li>
+                    <li><a href="files/project1-spread3.pdf" download>Project 1 - Spread 3</a></li>
                 </ul>
             </section>
         </main>
