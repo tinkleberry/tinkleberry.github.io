@@ -1,0 +1,77 @@
+/* home.css */
+
+/* General body styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray/black text color */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-top: 20px;
+    color: #000; /* Black text color */
+    text-shadow: none;
+}
+
+/* Container to center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Centers the content vertically */
+    color: #333; /* Dark gray/black color for text */
+}
+
+/* Main content */
+main {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow around the content box */
+}
+
+/* Heading for the Project Center */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000; /* Black text color */
+}
+
+/* Remove bullets from the list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* List items */
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* List item links */
+ul li a {
+    text-decoration: none;
+    color: #000; /* Black text color */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on list item links */
+ul li a:hover {
+    color: #666; /* Dark gray on hover */
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Dark gray/black color for text */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 10px 0;
+}
