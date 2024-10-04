@@ -6,7 +6,7 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2; /* Light gray background */
-    color: #333; /* Dark gray/black text color */
+    color: #000; /* Dark gray/black text color */
 }
 
 /* Header styling */
@@ -23,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 80vh; /* Centers the content vertically */
-    color: #333; /* Dark gray/black color for text */
+    color: #000; /* Dark gray/black color for text */
 }
 
 /* Main content */
@@ -65,13 +65,4 @@ ul li a {
 ul li a:hover {
     color: #666; /* Dark gray on hover */
     text-decoration: underline;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #333; /* Dark gray/black color for text */
-    background-color: #f2f2f2; /* Light gray background */
-    padding: 10px 0;
 }
