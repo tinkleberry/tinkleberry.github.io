@@ -6,28 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SCRA - NEE Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Centers the content vertically */
+        }
+
+        main {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-     <header>
+    <header>
         <h1>NextEra Energy</h1>
-     </header>
+    </header>
 
     <!-- Main Content -->
     <div class="container">
         <main>
             <section id="home">
-                <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Project Center</a>
-                <div class="dropdown-content">
-                   <a href="documents.html">Caddeaux</a>
-                    <a href="documents.html">Caddeaux SWD</a>
-                    <a href="documents.html">Caddeaux SWD Maintenance</a>
-                    <a href="documents.html">South Texas</a>
-                    <a href="documents.html">South Texas Maintenance</a>
-                    <a href="documents.html">Oklahoma</a>
-                    <a href="documents.html">Oklahoma Maintenance</a>
-                </div>
-        </ul>
+                <h2>Project Center</h2>
+                <ul>
+                    <li><a href="documents.html">Caddeaux</a></li>
+                    <li><a href="documents.html">Caddeaux SWD</a></li>
+                    <li><a href="documents.html">Caddeaux SWD Maintenance</a></li>
+                    <li><a href="documents.html">South Texas</a></li>
+                    <li><a href="documents.html">South Texas Maintenance</a></li>
+                    <li><a href="documents.html">Oklahoma</a></li>
+                    <li><a href="documents.html">Oklahoma Maintenance</a></li>
+                </ul>
             </section>
         </main>
     </div>
@@ -38,3 +88,4 @@
     </footer>
 </body>
 </html>
+
