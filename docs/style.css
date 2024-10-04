@@ -1,122 +1,55 @@
-/* Global Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    background-color: #c7cacb;
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    letter-spacing: 1.5px;
-}
-
 /* Navigation Menu */
-nav {
-    background-color: #c7cacb;
-    padding: 10px;
-    text-align: center;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    position: relative; /* For dropdown */
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #000000;
-}
-
-/* Main Section */
-main {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-main h2 {
-    color: #4ec6f2;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-main p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-main a {
-    color: #4ec6f2;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-main a:hover {
-    color: #002266;
-}
-
-/* Button Styles */
-.btn {
-    background-color: #c7cacb;
-    color: rgb(0, 0, 0);
-    border: none;
     padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #c7cacb;
+/* Dropdown Menu */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-/* Footer */
-footer {
-    background-color: #c7cacb;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
+nav ul li .dropdown-content a {
+    color: #0044cc;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     font-size: 1em;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover Effect for Dropdown Button */
+nav ul li .dropbtn:hover, nav ul li:hover > a {
+    background-color: #003399;
+    color: white;
 }
 
