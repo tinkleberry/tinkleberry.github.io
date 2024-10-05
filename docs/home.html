@@ -15,6 +15,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            position: relative; /* Ensures the background image stays fixed */
         }
 
         header {
@@ -31,14 +32,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 300px; /* Smaller box size */
-            height: 200px; /* Smaller box size */
-            margin: auto; /* Centers the box on the screen */
+            flex-direction: column; /* Stack items vertically */
+            width: auto;
+            height: auto;
             color: black;
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+            max-width: 80%; /* Make sure the box doesn't exceed 80% of the screen width */
+            margin: auto; /* Centers the container */
+            position: relative;
+            z-index: 2; /* Ensures the box is in front of the background image */
         }
 
         main {
@@ -69,6 +74,17 @@
         ul li a:hover {
             text-decoration: underline;
         }
+
+        body:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Optional darker overlay for the background image */
+            z-index: 1; /* The background image overlay stays behind the flexbox content */
+        }
     </style>
 </head>
 <body>
@@ -95,4 +111,3 @@
     </div>
 </body>
 </html>
-
