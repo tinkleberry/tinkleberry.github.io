@@ -6,7 +6,7 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2; /* Light gray background */
-    color: #000; /* Dark gray/black text color */
+    color: #000; /* Black text color */
 }
 
 /* Header styling */
@@ -23,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 80vh; /* Centers the content vertically */
-    color: #000; /* Dark gray/black color for text */
+    color: #000; /* Black color for text */
 }
 
 /* Main content */
@@ -52,6 +52,7 @@ ul {
 ul li {
     margin: 10px 0;
     font-size: 18px;
+    color: #000; /* Black text */
 }
 
 /* List item links */
@@ -63,6 +64,6 @@ ul li a {
 
 /* Hover effect on list item links */
 ul li a:hover {
-    color: #666; /* Dark gray on hover */
+    color: #fff; /* White text on hover */
     text-decoration: underline;
 }
