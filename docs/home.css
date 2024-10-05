@@ -9,7 +9,7 @@ body, html {
     display: flex; /* Use Flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    position: relative; /* Ensures the background image stays fixed */
+    flex-direction: column; /* Stack header and container vertically */
 }
 
 header {
@@ -34,7 +34,8 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
-    max-width: 30%; /* Limit the maximum width */
+    max-width: 40%; /* Limit the maximum width */
+    margin-top: 50px; /* Add space between header and container */
     position: relative;
     z-index: 2; /* Ensures the box is in front of the background image */
 }
@@ -67,15 +68,3 @@ ul li a {
 ul li a:hover {
     text-decoration: underline;
 }
-
-body:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Optional darker overlay for the background image */
-    z-index: 1; /* The background image overlay stays behind the flexbox content */
-}
-
